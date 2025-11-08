@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cabinet Médical — Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <div class="brand">Cabinet Médical</div>
+    <nav class="spacer">
+      <a href="index.html">Accueil</a>
+      <a href="patients.html">Patients</a>
+      <a href="medecins.html">Médecins</a>
+      <a href="rendezvous.html">Rendez-vous</a>
+      <a href="paiements.html">Paiements</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Contact</h1>
+    <p>Nous écrire ou planifier un appel.</p>
+  </div>
+</section>
+
+<main class="container section">
+  <div class="grid">
+    <div class="col-6">
+      <div class="card">
+        <h3>Formulaire</h3>
+        <form class="form" action="#" method="post">
+          <div class="row">
+            <div class="span-6"><label>Nom</label><input class="input" type="text" placeholder="Votre nom" required></div>
+            <div class="span-6"><label>Email</label><input class="input" type="email" placeholder="vous@exemple.be" required></div>
+            <div class="span-12"><label>Objet</label><input class="input" type="text" placeholder="Sujet du message" required></div>
+            <div class="span-12"><label>Message</label><textarea class="input" rows="5" placeholder="Votre message..." required></textarea></div>
+          </div>
+          <button class="btn primary" type="submit">Envoyer</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="col-6">
+      <div class="card">
+        <h3>Coordonnées</h3>
+        <p>Adresse: Rue de la Santé 10, 6000 Charleroi</p>
+        <p>Téléphone: +32 2 123 45 67</p>
+        <p>Email: accueil@cabinet-medical.be</p>
+        <div style="height:10px"></div>
+        <h3>Horaires</h3>
+        <p>Lun–Ven: 08:30–18:00</p>
+        <p>Sam: 09:00–12:30</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">© 2025 Cabinet Médical</footer>
+</body>
+</html>

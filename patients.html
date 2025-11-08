@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cabinet Médical — Patients</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <div class="brand">Cabinet Médical</div>
+    <nav class="spacer">
+      <a href="index.html">Accueil</a>
+      <a href="patients.html" class="active">Patients</a>
+      <a href="medecins.html">Médecins</a>
+      <a href="rendezvous.html">Rendez-vous</a>
+      <a href="paiements.html">Paiements</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Patients</h1>
+    <p>Fiches patients et informations essentielles.</p>
+  </div>
+</section>
+
+<main class="container section">
+  <div class="card table-wrap">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Nom</th><th>Naissance</th><th>Téléphone</th><th>Assurance</th><th>Statut</th><th style="width:160px;">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Dupont Alice</td><td>12/03/1991</td><td>+32 473 12 34 56</td><td>Mutuelle A</td>
+          <td><span class="tag success">Actif</span></td>
+          <td><a class="btn" href="#">Voir</a> <a class="btn" href="#">Éditer</a></td>
+        </tr>
+        <tr>
+          <td>Martin Hugo</td><td>02/11/1984</td><td>+32 478 98 76 54</td><td>Mutuelle B</td>
+          <td><span class="tag">Nouveau</span></td>
+          <td><a class="btn" href="#">Voir</a> <a class="btn" href="#">Éditer</a></td>
+        </tr>
+        <tr>
+          <td>Lefèvre Inès</td><td>24/07/1996</td><td>+32 495 22 11 33</td><td>Mutuelle C</td>
+          <td><span class="tag warn">À compléter</span></td>
+          <td><a class="btn" href="#">Voir</a> <a class="btn" href="#">Éditer</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div style="height:16px"></div>
+
+  <div class="card">
+    <h3>Ajouter un patient</h3>
+    <form class="form" action="#" method="post">
+      <div class="row">
+        <div class="span-6">
+          <label>Nom</label>
+          <input class="input" type="text" placeholder="Nom complet">
+        </div>
+        <div class="span-6">
+          <label>Date de naissance</label>
+          <input class="input" type="date">
+        </div>
+        <div class="span-6">
+          <label>Téléphone</label>
+          <input class="input" type="tel" placeholder="+32 ...">
+        </div>
+        <div class="span-6">
+          <label>Assurance</label>
+          <input class="input" type="text" placeholder="Mutuelle / Assureur">
+        </div>
+        <div class="span-12">
+          <label>Notes</label>
+          <textarea class="input" rows="4" placeholder="Antécédents, allergies..."></textarea>
+        </div>
+      </div>
+      <div><button class="btn primary" type="submit">Enregistrer</button></div>
+    </form>
+  </div>
+</main>
+
+<footer class="footer">© 2025 Cabinet Médical</footer>
+</body>
+</html>

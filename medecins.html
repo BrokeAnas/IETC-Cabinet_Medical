@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cabinet Médical — Médecins</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <div class="brand">Cabinet Médical</div>
+    <nav class="spacer">
+      <a href="index.html">Accueil</a>
+      <a href="patients.html">Patients</a>
+      <a href="medecins.html" class="active">Médecins</a>
+      <a href="rendezvous.html">Rendez-vous</a>
+      <a href="paiements.html">Paiements</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Médecins</h1>
+    <p>Spécialités, disponibilités et coordonnées.</p>
+  </div>
+</section>
+
+<main class="container section">
+  <div class="grid">
+    <div class="col-4"><div class="card"><h3>Dr. Claire Bernard</h3><p>Médecine générale — L, M, J</p><p class="tag" style="margin-top:10px;">cmu@exemple.be</p></div></div>
+    <div class="col-4"><div class="card"><h3>Dr. Samir Haddad</h3><p>Médecin général spécialisé en médecine sport — M, V</p><p class="tag" style="margin-top:10px;">cardio@exemple.be</p></div></div>
+    <div class="col-4"><div class="card"><h3>Dr. Zoé Lambert</h3><p>Pédiatrie — L, M, J, V</p><p class="tag" style="margin-top:10px;">pediatrie@exemple.be</p></div></div>
+  </div>
+
+  <div style="height:16px"></div>
+
+  <div class="card">
+    <h3>Ajouter un praticien</h3>
+    <form class="form" action="#" method="post">
+      <div class="row">
+        <div class="span-6"><label>Nom</label><input class="input" type="text" placeholder="Nom du médecin"></div>
+        <div class="span-6"><label>Spécialité</label><input class="input" type="text" placeholder="Ex: Dermatologie"></div>
+        <div class="span-6"><label>Email</label><input class="input" type="email" placeholder="contact@..."></div>
+        <div class="span-6"><label>Disponibilités</label><input class="input" type="text" placeholder="Ex: L, M, J"></div>
+      </div>
+      <button class="btn primary" type="submit">Enregistrer</button>
+    </form>
+  </div>
+</main>
+
+<footer class="footer">© 2025 Cabinet Médical</footer>
+</body>
+</html>
