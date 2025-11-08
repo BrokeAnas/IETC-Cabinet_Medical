@@ -174,3 +174,19 @@ label{ font-size:14px; color:var(--muted) }
 @media (min-width: 1200px){ /* Desktop */
   .container{ max-width:1200px }
 }
+
+@media (max-width: 768px) {
+  .nav {
+    justify-content: space-between;
+    gap: 8px;                      
+  }
+  .nav a {
+    flex-grow: 1;            
+    padding: 8px 10px;     
+    font-size: 14px;         
+    text-align: center;      
+    white-space: nowrap;    
+    overflow: hidden;       
+    text-overflow: ellipsis;
+  }
+}
